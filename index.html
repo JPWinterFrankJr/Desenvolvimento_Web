@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <!-- Configurações básicas da página -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Título que aparece na aba do navegador -->
+  <title>Winter Web | Desenvolvimento e Dados</title>
+
+  <!-- Descrição para buscadores como Google -->
+  <meta name="description"
+    content="Sites, landing pages, dashboards e soluções digitais com clareza. Winter Web por João Pedro Frank.">
+
+  <!-- Pré-conexão com Google Fonts para melhorar carregamento -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Bootstrap: usado para utilitários e ícones -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons: biblioteca de ícones usada no site -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Fontes do site -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- Container principal: divide o layout em sidebar + conteúdo -->
+  <div class="app">
+
+    <!-- MENU LATERAL -->
+    <aside class="sidebar" id="sidebar">
+
+      <!-- Parte superior do menu -->
+      <div>
+
+        <!-- Marca: logo + nome -->
+        <div class="brand">
+
+          <!-- Logo da Winter Web -->
+          <div class="brand-logo">
+            <img src="assets/img/logo.png" alt="Logo Winter Web">
+          </div>
+
+          <div>
+            <strong>Winter Web</strong>
+            <span>Desenvolvimento e Dados</span>
+          </div>
+        </div>
+
+        <!-- Selo de disponibilidade -->
+        <div class="status">
+          <span class="status-dot"></span>
+          Projetos e oportunidades
+        </div>
+
+        <!-- Navegação principal -->
+        <nav class="nav-menu">
+          <a href="#inicio" class="active">
+            <i class="bi bi-house"></i>
+            Início
+          </a>
+
+          <a href="#servicos">
+            <i class="bi bi-tools"></i>
+            Serviços
+          </a>
+
+          <a href="#projetos">
+            <i class="bi bi-layers"></i>
+            Projetos
+          </a>
+
+          <a href="#sobre">
+            <i class="bi bi-person-badge"></i>
+            Sobre
+          </a>
+
+          <a href="#caminhos">
+            <i class="bi bi-signpost"></i>
+            Caminhos
+          </a>
+
+          <a href="#contato">
+            <i class="bi bi-send"></i>
+            Contato
+          </a>
+        </nav>
+      </div>
+
+      <!-- Caixa inferior do menu -->
+      <div class="sidebar-box">
+        <strong>João Pedro Frank</strong>
+        <span>Sites, dados, BI e soluções digitais.</span>
+      </div>
+    </aside>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="main">
+
+      <!-- Barra superior fixa -->
+      <div class="topbar">
+
+        <!-- Lado esquerdo da topbar -->
+        <div class="d-flex align-items-center gap-3">
+
+          <!-- Botão do menu mobile -->
+          <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <!-- Bolinhas decorativas -->
+          <div class="window-dots">
+            <span class="red"></span>
+            <span class="yellow"></span>
+            <span class="green"></span>
+          </div>
+        </div>
+
+        <!-- Texto central da topbar -->
+        <div class="topbar-title mono">
+          /winter-web/index.html
+        </div>
+
+        <!-- Ações da topbar -->
+        <div class="top-actions">
+
+          <!-- Botão de tema claro/escuro -->
+          <button class="theme-btn" id="themeBtn" aria-label="Alterar tema">
+            <i class="bi bi-moon-stars"></i>
+          </button>
+
+          <span class="mono version-text">v2.3</span>
+        </div>
+      </div>
+
+      <!-- Conteúdo interno -->
+      <div class="screen">
+
+        <!-- INÍCIO -->
+        <section id="inicio">
+          <div class="hero-grid">
+
+            <!-- Texto principal -->
+            <div>
+              <span class="section-label">winter_web.start()</span>
+
+              <h1 class="title">
+                Sites, dados e soluções digitais com <span>clareza.</span>
+              </h1>
+
+              <p class="lead">
+                Crio sites, landing pages e dashboards para negócios que precisam se apresentar melhor,
+                vender com mais clareza e tomar decisões com dados.
+              </p>
+
+              <p class="lead">
+                Sou João Pedro Frank, profissional de tecnologia e dados — também aberto a oportunidades profissionais.
+              </p>
+
+              <!-- Botões principais -->
+              <div class="actions">
+                <a href="#servicos" class="btn-main">
+                  Ver serviços
+                  <i class="bi bi-arrow-down-right"></i>
+                </a>
+
+                <a href="#contato" class="btn-light-custom">
+                  Falar comigo
+                  <i class="bi bi-whatsapp"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Terminal visual -->
+            <div class="terminal">
+
+              <!-- Cabeçalho do terminal -->
+              <div class="terminal-head">
+                <span class="red"></span>
+                <span class="yellow"></span>
+                <span class="green"></span>
+                <span class="mono terminal-title">resumo-profissional</span>
+              </div>
+
+              <!-- Conteúdo do terminal -->
+              <div class="terminal-body">
+                <div class="comment">// o que eu faço</div>
+                <div><span class="cmd">$</span> criar_site</div>
+                <div class="result">→ presença digital profissional</div>
+                <br>
+
+                <div><span class="cmd">$</span> organizar_dados</div>
+                <div class="result">→ dashboards, BI e planilhas inteligentes</div>
+                <br>
+
+                <div><span class="cmd">$</span> transformar_ideias</div>
+                <div class="result">→ páginas, catálogos e soluções digitais</div>
+                <br>
+
+                <div><span class="cmd">$</span> status</div>
+                <div class="result">→ disponível para projetos e oportunidades <span class="cursor"></span></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SERVIÇOS -->
+        <section id="servicos">
+          <span class="section-label">serviços</span>
+
+          <h2 class="title section-title-sm">
+            O que posso criar para você.
+          </h2>
+
+          <!-- Cards de serviços -->
+          <div class="quick-grid">
+
+            <div class="quick-card">
+              <i class="bi bi-window-stack"></i>
+              <h3>Sites Institucionais</h3>
+              <p>Para negócios, profissionais, eventos e projetos que precisam de presença digital.</p>
+            </div>
+
+            <div class="quick-card">
+              <i class="bi bi-megaphone"></i>
+              <h3>Landing Pages</h3>
+              <p>Páginas focadas em divulgação, apresentação e contato pelo WhatsApp.</p>
+            </div>
+
+            <div class="quick-card">
+              <i class="bi bi-bar-chart-line"></i>
+              <h3>Dashboards e Dados</h3>
+              <p>Organização de informações, planilhas inteligentes e painéis de acompanhamento.</p>
+            </div>
+
+            <div class="quick-card">
+              <i class="bi bi-lightning-charge"></i>
+              <h3>Soluções Digitais</h3>
+              <p>Catálogos, páginas de apresentação e ferramentas simples para validar ideias.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- PROJETOS -->
+        <section id="projetos">
+          <span class="section-label">projetos</span>
+
+          <h2 class="title section-title-sm">
+            Trabalhos e provas práticas.
+          </h2>
+
+          <p class="lead">
+            Alguns exemplos do tipo de solução que desenvolvo ou estruturo.
+          </p>
+
+          <!-- Lista de projetos com imagens -->
+          <div class="project-list">
+
+            <!-- Projeto 1 -->
+            <a href="https://ourivesanderson.netlify.app/" class="project-item">
+              <div class="project-image">
+                <img src="assets/img/Atelie.png" alt="Prévia do site Ateliê de Joias Anderson Furich">
+              </div>
+
+              <div class="project-content">
+                <div class="project-type">Site institucional com catálogo de produtos</div>
+
+                <h3>Ateliê de Joias Anderson Furich</h3>
+
+                <p>
+                  Site para apresentar produtos, categorias e contato direto pelo WhatsApp.
+                </p>
+              </div>
+
+              <div class="open-icon">
+                <i class="bi bi-arrow-up-right"></i>
+              </div>
+            </a>
+
+            <!-- Projeto 2 -->
+            <a href="#" class="project-item">
+              <div class="project-image">
+                <img src="assets/img/Desenvolvimento.png" alt="Prévia do site Rotaract Club de Bagé Campanha">
+              </div>
+
+              <div class="project-content">
+                <div class="project-type">institucional</div>
+
+                <h3>Atlética de Fisioterapia da Faculdade URCAMP</h3>
+
+                <p>
+                  Página para apresentar ações, diretoria, parceiros, produtos e formas de participação.
+                </p>
+              </div>
+
+              <div class="open-icon">
+                <i class="bi bi-arrow-up-right"></i>
+              </div>
+            </a>
+
+            <!-- Projeto 3 -->
+            <a href="#" class="project-item">
+              <div class="project-image">
+                <img src="assets/img/Desenvolvimento.png" alt="Prévia de dashboard e relatórios">
+              </div>
+
+              <div class="project-content">
+                <div class="project-type">dados</div>
+
+                <h3>Dashboards e relatórios</h3>
+
+                <p>
+                  Organização de dados para acompanhamento, análise e tomada de decisão.
+                </p>
+              </div>
+
+              <div class="open-icon">
+                <i class="bi bi-arrow-up-right"></i>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <!-- SOBRE -->
+        <section id="sobre">
+          <span class="section-label">sobre_mim</span>
+
+          <h2 class="title section-title-sm">
+            Quem está por trás da Winter Web.
+          </h2>
+
+          <div class="about-grid">
+
+            <!-- Foto de perfil -->
+            <div class="photo-box">
+              <div>
+                <h3>João Pedro Frank Winter Jr.</h3>
+                <p>Desenvolvimento web • Dados • BI • Soluções digitais</p>
+              </div>
+            </div>
+
+            <!-- Texto sobre você -->
+            <div class="about-card">
+              <h3>Tecnologia com visão analítica e prática.</h3>
+
+              <p>
+                Sou formado em Matemática Bacharelado e atuo com tecnologia,
+                desenvolvimento web, dados e soluções digitais.
+              </p>
+
+              <p>
+                Meu foco é unir estética, organização e execução para transformar ideias
+                em soluções úteis, apresentáveis e funcionais.
+              </p>
+
+              <!-- Habilidades -->
+              <div class="skills">
+                <span>HTML/CSS/JS</span>
+                <span>Bootstrap</span>
+                <span>Laravel</span>
+                <span>SQL</span>
+                <span>Power BI</span>
+                <span>Google Sheets</span>
+                <span>Dashboards</span>
+                <span>BI</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CAMINHOS -->
+        <section id="caminhos">
+          <span class="section-label">dois_caminhos</span>
+
+          <h2 class="title section-title-sm">
+            Você pode chegar aqui por dois motivos.
+          </h2>
+
+          <div class="paths">
+
+            <!-- Caminho para cliente -->
+            <div class="path">
+              <div>
+                <h3>Contratar um projeto</h3>
+                <p>Para criar um site, landing page, dashboard, catálogo ou solução digital simples.</p>
+              </div>
+
+              <a href="#contato" class="btn-main">
+                Quero um projeto
+                <i class="bi bi-whatsapp"></i>
+              </a>
+            </div>
+
+            <!-- Caminho para oportunidade profissional -->
+            <div class="path">
+              <div>
+                <h3>Me chamar para uma oportunidade</h3>
+                <p>Para vagas ou projetos em desenvolvimento web, dados, BI, suporte ou tecnologia.</p>
+              </div>
+
+              <a href="https://www.linkedin.com/in/jo%C3%A3o-frank/" target="_blank" class="btn-light-custom">
+                Ver LinkedIn
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section id="contato">
+          <span class="section-label">contato</span>
+
+          <h2 class="title section-title-sm">
+            Vamos conversar?
+          </h2>
+
+          <!-- Bloco final de contato -->
+          <div class="contact-box">
+            <div>
+              <h2>Me chama.</h2>
+              <p>
+                Podemos falar sobre um site, uma landing page, um dashboard ou uma oportunidade profissional.
+              </p>
+            </div>
+
+            <!-- Botões de contato -->
+            <div class="contact-buttons">
+
+              <!-- Troque o número pelo seu WhatsApp real -->
+              <a href="https://wa.me/555399096259?text=Olá,%20João!%20Vi%20seu%20site%20da%20Winter%20Web%20e%20gostaria%20de%20conversar."
+                target="_blank">
+                WhatsApp
+                <i class="bi bi-whatsapp"></i>
+              </a>
+
+              <!-- Troque pelo seu e-mail real -->
+              <a href="mailto:seuemail@email.com" class="secondary">
+                E-mail
+                <i class="bi bi-envelope"></i>
+              </a>
+
+              <a href="https://github.com/JPWinterFrankJr" target="_blank" class="secondary">
+                GitHub
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Rodapé -->
+      <footer>
+        <span>Winter Web | Desenvolvimento e Dados</span>
+        <span>João Pedro F. W. Jr.</span>
+      </footer>
+    </main>
+  </div>
+
+  <!-- Botão flutuante do WhatsApp -->
+  <a href="https://wa.me/555399096259?text=Olá,%20João!%20Vi%20seu%20site%20da%20Winter%20Web%20e%20gostaria%20de%20conversar."
+    class="whatsapp-float" target="_blank" aria-label="Falar no WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+  <!-- JavaScript principal -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
